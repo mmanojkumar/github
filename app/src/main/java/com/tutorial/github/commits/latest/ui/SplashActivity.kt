@@ -10,20 +10,21 @@ import com.tutorial.github.R
 class SplashActivity : AppCompatActivity(){
 
     private val handler:Handler = Handler()
+    private lateinit var runnable:Runnable
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_activity)
-
-        handler.postDelayed({
+        runnable = Runnable{
             startActivity(Intent(this@SplashActivity, LatestCommitActivity::class.java))
             finish()
-        },2000)
+        }
+        handler.postDelayed(runnable,2000)
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
-        handler.removeCallbacks(null)
+        handler.removeCallbacks(runnable)
     }
 
 }
