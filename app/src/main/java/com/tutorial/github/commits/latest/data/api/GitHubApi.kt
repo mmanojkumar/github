@@ -4,6 +4,6 @@ import com.tutorial.github.commits.latest.data.model.LatestCommit import io.reac
 import retrofit2.http.GET
 
 interface GitHubApi {
-    @GET("repos/mmanojkumar/swipe-layout-android/commits?sha=develop")
+    @GET("repos/mmanojkumar/github/commits?sha=master")
     fun  getLatestCommits(): Single<List<LatestCommit>>
 }
