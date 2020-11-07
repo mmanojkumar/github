@@ -1,4 +1,4 @@
-package com.tutorial.github.ui
+package com.tutorial.github.commits.latest.ui
 
 import android.view.View
 import android.view.ViewGroup

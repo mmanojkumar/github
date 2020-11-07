@@ -1,4 +1,4 @@
-package com.tutorial.github.ui
+package com.tutorial.github.commits.latest.ui
 
 import android.content.Intent
 import android.os.Bundle

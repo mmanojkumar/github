@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.SplashActivity"
+            android:name="com.tutorial.github.commits.latest.ui.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.LatestCommitActivity"
+            android:name="com.tutorial.github.commits.latest.ui.LatestCommitActivity"
             android:label="@string/latest_commit" />
     </application>
 

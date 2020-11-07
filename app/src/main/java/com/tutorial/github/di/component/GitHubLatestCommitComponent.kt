@@ -8,7 +8,7 @@ import com.tutorial.github.commits.latest.data.repository.LatestCommitRepository
 import com.tutorial.github.di.module.GitHubViewModelModule
 import com.tutorial.github.di.module.LatestCommitModule
 import com.tutorial.github.di.scope.LatestCommitScope
-import com.tutorial.github.ui.LatestCommitActivity
+import com.tutorial.github.commits.latest.ui.LatestCommitActivity
 import dagger.Component
 
 
