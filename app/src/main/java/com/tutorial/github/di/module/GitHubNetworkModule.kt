@@ -15,13 +15,12 @@ import javax.inject.Singleton
 
 
 @Module
-class GitHubNetworkModule(private val baseUrl:String){
+class GitHubNetworkModule{
 
     @Provides
-    @Singleton
-    fun retrofit(okHttpClient: OkHttpClient): Retrofit {
+    fun retrofit(okHttpClient: OkHttpClient, githubUrl:String): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(baseUrl)
+            .baseUrl(githubUrl)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(okHttpClient)
@@ -37,7 +36,6 @@ class GitHubNetworkModule(private val baseUrl:String){
     }
 
     @Provides
-    @Singleton
     fun okHttpClient(context: Context): OkHttpClient {
         val builder = OkHttpClient.Builder()
 
@@ -51,6 +49,10 @@ class GitHubNetworkModule(private val baseUrl:String){
     }
 
 
+    @Provides
+    fun githubUrl(): String {
+        return "https://api.github.com/"
+    }
 
 
 

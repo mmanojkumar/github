@@ -12,16 +12,15 @@ import com.tutorial.github.di.module.LatestCommitModule
 
 class GitHubApplication : Application() {
 
-      lateinit var gitHubComponent:GitHubNetworkComponent
       lateinit var gitHubLatestCommitComponent: GitHubLatestCommitComponent
 
     override fun onCreate() {
         super.onCreate()
 
-        gitHubComponent = DaggerGitHubNetworkComponent
+        val gitHubComponent = DaggerGitHubNetworkComponent
             .builder()
             .contextModule(ContextModule(this))
-            .gitHubNetworkModule(GitHubNetworkModule("https://api.github.com/"))
+            .gitHubNetworkModule(GitHubNetworkModule())
             .build()
 
         gitHubLatestCommitComponent =  DaggerGitHubLatestCommitComponent
