@@ -1,8 +1,8 @@
 package com.tutorial.github.di.module
 
 import android.content.Context
-import com.tutorial.github.data.network.GitHubRestClient
-import com.tutorial.github.data.network.interceptor.InternetConnectionInterceptor
+import com.tutorial.github.commits.latest.data.network.GitHubRestClient
+import com.tutorial.github.commits.latest.data.network.interceptor.InternetConnectionInterceptor
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.tutorial.github.BuildConfig
 import dagger.Module

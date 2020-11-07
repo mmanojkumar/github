@@ -1,9 +1,8 @@
 package com.tutorial.github.commits.latest.contract
 
 import androidx.lifecycle.MutableLiveData
-import com.tutorial.github.commits.latest.contract.ILatestCommitContract
-import com.tutorial.github.data.model.LatestCommit
-import com.tutorial.github.data.repository.LatestCommitRepository
+import com.tutorial.github.commits.latest.data.model.LatestCommit
+import com.tutorial.github.commits.latest.data.repository.LatestCommitRepository
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

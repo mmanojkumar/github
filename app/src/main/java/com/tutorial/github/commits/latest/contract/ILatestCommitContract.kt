@@ -1,6 +1,6 @@
 package com.tutorial.github.commits.latest.contract
 
-import com.tutorial.github.data.model.LatestCommit
+import com.tutorial.github.commits.latest.data.model.LatestCommit
 interface ILatestCommitContract{
 
     //View

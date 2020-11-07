@@ -4,7 +4,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tutorial.github.R
-import com.tutorial.github.data.model.LatestCommit
+import com.tutorial.github.commits.latest.data.model.LatestCommit
 import kotlinx.android.synthetic.main.commit_view_item.view.*
 import kotlinx.android.synthetic.main.key_value.view.*
 

@@ -10,8 +10,8 @@ import com.tutorial.github.GitHubApplication
 import com.tutorial.github.R
 import com.tutorial.github.commits.latest.contract.ILatestCommitContract
 import com.tutorial.github.commits.latest.contract.LatestCommitPresenter
-import com.tutorial.github.data.model.LatestCommit
-import com.tutorial.github.data.network.interceptor.NoInternetException
+import com.tutorial.github.commits.latest.data.model.LatestCommit
+import com.tutorial.github.commits.latest.data.network.interceptor.NoInternetException
 import com.tutorial.github.databinding.ActivityLatestCommitBinding
 import kotlinx.android.synthetic.main.activity_latest_commit.*
 import kotlinx.android.synthetic.main.activity_latest_commit.view.*
