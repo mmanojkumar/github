@@ -1,4 +1,4 @@
-package com.tutorial.github.data.model
+package com.tutorial.github.commits.latest.data.model
 
 class LatestCommit {
     var sha: String? = null

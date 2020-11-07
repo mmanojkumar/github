@@ -1,6 +1,6 @@
-package com.tutorial.github.data.api
+package com.tutorial.github.commits.latest.data.api
 
-import com.tutorial.github.data.model.LatestCommit import io.reactivex.Single
+import com.tutorial.github.commits.latest.data.model.LatestCommit import io.reactivex.Single
 import retrofit2.http.GET
 
 interface GitHubApi {
