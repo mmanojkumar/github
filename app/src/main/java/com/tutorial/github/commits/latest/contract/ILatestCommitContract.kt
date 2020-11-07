@@ -1,4 +1,4 @@
-package com.tutorial.github.contract
+package com.tutorial.github.commits.latest.contract
 
 import com.tutorial.github.data.model.LatestCommit
 interface ILatestCommitContract{

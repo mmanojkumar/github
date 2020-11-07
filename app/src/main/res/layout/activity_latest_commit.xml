@@ -7,7 +7,7 @@
 
         <variable
             name="latestCommitViewModel"
-            type="com.tutorial.github.contract.LatestCommitPresenter" />
+            type="com.tutorial.github.commits.latest.contract.LatestCommitPresenter" />
     </data>
 
     <LinearLayout

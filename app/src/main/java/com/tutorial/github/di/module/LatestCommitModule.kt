@@ -2,8 +2,8 @@ package com.tutorial.github.di.module
 
 import androidx.lifecycle.MutableLiveData
 
-import com.tutorial.github.contract.ILatestCommitContract
-import com.tutorial.github.contract.LatestCommitInteractor
+import com.tutorial.github.commits.latest.contract.ILatestCommitContract
+import com.tutorial.github.commits.latest.contract.LatestCommitInteractor
 import com.tutorial.github.data.network.GitHubRestClient
 import com.tutorial.github.data.model.LatestCommit
 import com.tutorial.github.data.repository.GitHubDataRepository
@@ -21,7 +21,9 @@ class LatestCommitModule{
     fun latestCommitInteractor(latestCommitRepository: LatestCommitRepository<List<LatestCommit>>): ILatestCommitContract.
     ILatestCommitInteractor<ILatestCommitContract
     .Result<MutableLiveData<List<LatestCommit>>, MutableLiveData<Throwable>>> {
-        return LatestCommitInteractor(latestCommitRepository)
+        return LatestCommitInteractor(
+            latestCommitRepository
+        )
     }
 
     @Provides

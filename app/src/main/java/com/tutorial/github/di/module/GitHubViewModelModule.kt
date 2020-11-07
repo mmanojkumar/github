@@ -2,7 +2,7 @@ package com.tutorial.github.di.module
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.tutorial.github.contract.LatestCommitPresenter
+import com.tutorial.github.commits.latest.contract.LatestCommitPresenter
 import com.tutorial.github.di.factory.GitHubViewModelFactory
 
 

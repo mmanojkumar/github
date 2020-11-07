@@ -8,13 +8,13 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tutorial.github.GitHubApplication
 import com.tutorial.github.R
-import com.tutorial.github.contract.ILatestCommitContract
-import com.tutorial.github.contract.LatestCommitPresenter
+import com.tutorial.github.commits.latest.contract.ILatestCommitContract
+import com.tutorial.github.commits.latest.contract.LatestCommitPresenter
 import com.tutorial.github.data.model.LatestCommit
 import com.tutorial.github.data.network.interceptor.NoInternetException
-import com.tutorial.github.databinding.LatestCommitActivityBinding
-import kotlinx.android.synthetic.main.latest_commit_activity.*
-import kotlinx.android.synthetic.main.latest_commit_activity.view.*
+import com.tutorial.github.databinding.ActivityLatestCommitBinding
+import kotlinx.android.synthetic.main.activity_latest_commit.*
+import kotlinx.android.synthetic.main.activity_latest_commit.view.*
 import javax.inject.Inject
 
 class LatestCommitActivity : AppCompatActivity(), ILatestCommitContract.ILatestCommitView {
@@ -24,7 +24,7 @@ class LatestCommitActivity : AppCompatActivity(), ILatestCommitContract.ILatestC
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.latest_commit_activity)
+        setContentView(R.layout.activity_latest_commit)
 
         initDaggerDependencies()
         initView()
@@ -42,9 +42,9 @@ class LatestCommitActivity : AppCompatActivity(), ILatestCommitContract.ILatestC
 
     private fun initView() {
         val activityLatestCommitBinding =
-            DataBindingUtil.setContentView<LatestCommitActivityBinding>(
+            DataBindingUtil.setContentView<ActivityLatestCommitBinding>(
                 this,
-                R.layout.latest_commit_activity
+                R.layout.activity_latest_commit
             )
         activityLatestCommitBinding.latestCommitViewModel = latestCommitViewModel
         activityLatestCommitBinding.lifecycleOwner = this
